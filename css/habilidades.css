@@ -1,0 +1,106 @@
+.habilidades-info {
+  padding: 0 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.habilidades-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 4.5rem;
+  color: #141414;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.habilidades-title span {
+  color: #A839FF;
+}
+
+.habilidades-text {
+  font-size: 1.5rem;
+  color: #525252;
+  line-height: 1.3;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cursos-box {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cursos-tempo {
+  font-size: .875rem;
+  color: #525252;
+}
+
+.cursos-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.cursos-title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #A839FF 0%, #9124E7 100%);
+  left: -26px;
+  top: 2px;
+}
+
+.cursos-instituiçao {
+  font-size: .875rem;
+  color: #525252;
+}
+
+@media (max-width: 800px) {
+  .habilidades-title {
+    font-size: 2.5rem;
+  }
+  .habilidades-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .habilidades {
+    padding: 40px 40px;
+  }
+  .habilidades img {
+    display: none;
+  }
+  .habilidades-info {
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .habilidades {
+    padding: 40px 20px;
+  }
+  .habilidades-text {
+    font-size: 1rem;
+  }
+  .cursos-tempo {
+    font-size: .675rem;
+  }
+  .cursos-title {
+    font-size: .875rem;
+  }
+  .cursos-instituiçao {
+    font-size: .675rem;
+  }
+}
