@@ -1,8 +1,5 @@
 .intro-box {
   padding: 0px 0px 0px 60px; 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .intro-title {
@@ -17,6 +14,7 @@
 }
 
 .intro-btn {
+  display: inline-block;
   text-decoration: none;
   color: #000000;
   font-weight: 500;
@@ -32,6 +30,24 @@
   background: transparent;
   color: #881ADE;
   border: 2px #881ADE solid;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.rs-items {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.rs-items a:hover path {
+  fill: #881ADE;
 }
 
 @media (max-width: 1000px) {
