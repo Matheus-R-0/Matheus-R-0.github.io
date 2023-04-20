@@ -40,10 +40,13 @@
 }
 
 .rs-items {
-  list-style: none;
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+}
+
+.rs-items li {
+  list-style: none;
 }
 
 .rs-items a:hover path {
